@@ -3,10 +3,6 @@
 **A fully offline Virtual Reality framework where a Vision-Language Model can listen, speak, and explore the world with you.**
 
 ### 🎥 [link to youtube]
-
-
-### [architecture diagram]
-
 ---
 
 ## The Vision
@@ -31,6 +27,8 @@ To maintain smooth framerates on the Meta Quest 3 while running a heavy 8B VLM, 
 1. **The Client (Quest 3):** Runs the UE5 game instance, captures 2D render targets of the environment, converts them to Base64, and captures player voice audio via `sherpa-onnx` (Whisper).
 2. **The Server (PC Edge):** A local `llama.cpp` server running `Ministral-3-8b` processes the Base64 frames and user prompts, returning response.
 3. **The Execution:** The C++ HTTP Bridge parses the JSON if needed, triggering the Spatial Registry to map the chosen ID back to a physical 3D actor, executing the movement or triggering the `Piper` TTS subsystem on normal responses.
+
+<img width="2035" height="962" alt="arch" src="https://github.com/user-attachments/assets/18708752-ac34-4b42-8b37-43b31f369879" />
 
 ---
 
