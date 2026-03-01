@@ -7,9 +7,10 @@
 
 ## The Vision
 
-Most AI in games use text descriptions of the level and objects for gameplay and cloud AI to perform in game tasks. NaturalPlay-VR is a completely offline, 3D spatial framework that allows an NPC to physically navigate and reason about its environment using pure visual data.
+Most AI in games use text descriptions of the level and objects for gameplay and cloud LLMs/VLMs to operate on that context. 
 
-There are no hardcoded navigation maps or pre-written dialogue trees. The NPC literally looks at the world, processes the image through a local VLM (Ministral 8B), and executes spatial commands with minimal latency.
+NaturalPlay-VR is a completely offline, 3D spatial framework that allows an NPC to physically navigate and reason about its environment using pure visual data.
+There are no hardcoded navigation maps or pre-written dialogue trees. The NPC literally looks at the world, processes the image through a local VLM (Ministral 3 8B), and executes spatial commands with minimal latency.
 
 ## Key Features
 
